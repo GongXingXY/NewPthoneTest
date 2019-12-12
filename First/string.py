@@ -122,6 +122,6 @@ favorite_language.strip() # 删除两端空白
 a, b = 5, 10
 print('%d * %d = %d' % (a,b, a*b))
 print('{0} * {1} = {2}'.format(a, b, a * b))  # 方法来
-print(f'{a} * {b} = {a * b}')  # 3.6之后的语法糖
+print(f'{a} * {b} = {a * b}')  # 3.6之后的语法糖  多用这个吧
 
 

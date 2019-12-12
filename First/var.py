@@ -111,11 +111,3 @@ PI = 3.14
 print(PI)
 
 
-number1 = int(input('number1 = '))
-number2 = int(input('number2 = '))
-
-# 格式化字符串输出三种方式
-print('%d + %d = %d' % (number1, number2, number1 + number2)) # 占位符语法
-print('{0} + {1} = {2}'.format(number1,number2, number1+number2))  # format 语法
-print(f'{number1} + {number2} = {number1 + number2}') # format语法糖
-
