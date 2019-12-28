@@ -72,6 +72,7 @@ a *= 3
 
 # 限制小数点格式化输出
 PI =math.pi
+print(PI)
 print('常量PI的值近似于%.2f' % (PI))
 print('常量PI的值近似于{:.2f}'.format(PI))
 print(f'常量PI的值近似于{PI:.2f}') # 3.6的语法糖 我选择用这个吧

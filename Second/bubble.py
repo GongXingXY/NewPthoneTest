@@ -13,9 +13,10 @@
 '''
 print('请输入10个任意数字！按回车键结束')
 lis = []  # 定义一个空列表
-for x in range(1, 11):  # 从1开始到10结束，共10个数字，符合题意
-    num = int(input('请您输入第' + str(x) + '个数字：'))  # 定义输入数字为number型并赋值给变量num
+for x in range(1, 3):  # 从1开始到10结束，共10个数字，符合题意
+    num = int(input(f'请你输入第{x}个数字：'))  # 定义输入数字为number型并赋值给变量num
     lis.append(num)  # 将变量num值添加给空列表lis
+
 
 # 第一种方法：冒泡排序--从左往右推
 # temp=0#将0赋值给temp
@@ -57,3 +58,17 @@ for a in range(len(lis)): #  循环90次 len(lis) = 10, range(0,10,1) = 0~9 A0
 print(lis)
 
 '''
+testlist = [1,100,9,22,80,30,23,86,38]
+
+def bubble_sort(alist):
+    '''冒泡排序'''
+    n = len(alist)
+
+    for i in range(n):
+        for j in range(n - 1):
+            if alist[j] > alist[j + 1]:
+
+                alist[j], alist[j + 1] = alist[j + 1], alist[j]
+    print(alist)
+
+bubble_sort(testlist)
