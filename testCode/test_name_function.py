@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 '''
-@File    :   test_name_function.py    
+@File    :   survey.py
 @Contact :   18898513573
 @Author  :   DrewB 
 @Time    :   2020/3/13 21:21 
@@ -16,4 +16,13 @@ class NamesTestCase(unittest.TestCase):  # 这个测试类 继承unittest.TestCa
         formatted_name = get_formatted_name('janis', 'joplin')
         self.assertEqual(formatted_name, 'Janis Joplin')  # unittest 最有用的功能之一 断言方法
 
-unittest.main()
+    def test_first_last_middle_name(self):
+        '''能够正确地处理像Wolfgang Amadeus Mozart这样的名字吗'''
+        formatted_name = get_formatted_name('wolfgang', 'mozart', 'amadeus')
+        self.assertEqual(formatted_name, 'Wolfgang Amadeus Mozart')
+
+if __name__ == 'main':
+    unittest.main()
+
+
+
